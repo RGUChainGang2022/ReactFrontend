@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 //Our custom components :)
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import AppBody from "./Body"
 
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
+    <AppBody/>
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')

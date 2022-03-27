@@ -1,10 +1,10 @@
 import React from "react";
-import "./css/stylesheet.css"
+import "./css/header_styles.css"
 
 function Footer(){
     return(
         <footer>
-        <div class="address">
+        <div className="address">
             <p>27 Albyn Place</p>
             <p>Aberdeen</p>
             <p>AB10 1DB</p>
@@ -26,14 +26,15 @@ function Footer(){
         </div>
 
         <div class="social">
-            <a href="https://wwww.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i>LINKEDIN</a>
-            <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i>YOUTUBE</a>
-            <a href="https://wwww.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i>FACEBOOK</a>
+            <a href="https://wwww.linkedin.com"><i className="fa fa-linkedin" aria-hidden="true"></i>LINKEDIN</a>
+            <a href="https://www.youtube.com"><i className="fa fa-youtube-play" aria-hidden="true"></i>YOUTUBE</a>
+            <a href="https://wwww.facebook.com"><i className="fa fa-facebook" aria-hidden="true"></i>FACEBOOK</a>
         </div>
 
 
 </footer>
     )
+   
 }
 
 export default Footer;
