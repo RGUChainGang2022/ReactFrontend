@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex-basis: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 8px 8px 5px #898d8d;
+    margin: 30px;
+    padding: 15px;
+    min-height: 250px;
+  }
+  
+  @media screen and (min-width: 950px) {
+    .column {
+      flex: 1;
+    }
+  }
+
+  body{
+      text-align: center;
+  }
