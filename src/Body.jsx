@@ -1,13 +1,13 @@
 import React from 'react';
 import "./components/css/body_styles.css"
-import Chart from "./components/Chart"
+import Stats from "./components/InfoDisplay"
 import ChartOne from "./components/ChartOne"
 function AppBody(props){
     return (
       <div>
         <div className="row">
             <div className="column">
-              <Chart data={props.data}/>
+              <Stats data={props.data}/>
             </div>
         </div>
 
