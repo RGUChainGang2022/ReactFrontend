@@ -17,7 +17,9 @@ export default class Stats extends React.Component {
     render() {
       return (
         <ul>
-          <h1>Recent block timestamps:</h1>
+          <h1>Previous block timestamps:</h1>
+          <br></br>
+          <h2>Current block {this.props.data[(this.props.data.length -1)].block.block_number}</h2>
           {
             this.props.data
               .map(person =>

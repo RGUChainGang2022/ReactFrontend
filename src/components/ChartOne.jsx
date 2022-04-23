@@ -39,7 +39,13 @@ export function Chart(props) {
         ],
       };
 
-  return <Pie data={chartData} />;
+  return (
+    <section>
+      <h1>Data from block: {props.data[props.index].block.block_number}</h1>
+      <br></br>
+      <Pie data={chartData} />
+    </section>
+  )
 }
 
 export default Chart;
