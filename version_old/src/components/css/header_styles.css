@@ -43,8 +43,6 @@ width: 100%;
 display: flex;
 align-items: center;
 background-color: #f7f7f7;
-padding-top: 50px;
-padding-bottom: 10px;
 }
 
 .address, .sitemap, .social{
@@ -61,7 +59,6 @@ color: #898d8d;
 
 .address{
     flex-direction: column;
-    color: #1e294d;
 }
 
 .sitemap, .sitemap a {
@@ -70,6 +67,7 @@ color: #898d8d;
     text-align: center;
     color: #898d8d
 }
+
 .sitemap li{
     list-style-type: none;
 }
@@ -77,12 +75,8 @@ color: #898d8d;
 .social, .social a {
     flex-direction: column;
     padding: 0.5rem;
-    color: #1e294d;
+    color: #898d8d;
     text-decoration: none;
-}
-
-a{
-    text-decoration: underline !important;
 }
 
 /* HOMEPAGE Styles*/
@@ -108,13 +102,4 @@ a{
 
 #logo{
     padding-left: 20px;
-}
-
-#title{
-    display: inline;
-    position: absolute;
-    float: right;
-    right: 25px;
-    color: white;
-    margin-top:  55px;
 }
