@@ -5,34 +5,34 @@ function Footer(){
     return(
         <footer>
         <div className="address">
+            <h4>E&C Global headquarters</h4>
             <p>27 Albyn Place</p>
             <p>Aberdeen</p>
             <p>AB10 1DB</p>
             <p>Scotland</p>
-            <br/>
-            <p>Email: contactus@global-ec.com</p>
         </div>
 
         <div className="sitemap">
             <nav>
                 <ul>
-                    <li>This website is not the Global E&C website!</li>
+                    <li><em>Please note this website is not the Global E&C website!</em></li>
                     <br/><br/>
-                    <li><a href="https://global-ec.com/our-company">Our Company</a></li>
-                    <li><a href="https://global-ec.com/contact">Contact Us</a></li>
+                    <li><a href="https://global-ec.com/">E&C website</a></li>
+                    <li><a href="https://global-ec.com/contact">E&C contact page</a></li>
                 </ul>
             </nav>
 
         </div>
 
         <div className="social">
-            <a href="https://wwww.linkedin.com"><i className="fa fa-linkedin" aria-hidden="true"></i>LINKEDIN</a>
-            <a href="https://www.youtube.com"><i className="fa fa-youtube-play" aria-hidden="true"></i>YOUTUBE</a>
-            <a href="https://wwww.facebook.com"><i className="fa fa-facebook" aria-hidden="true"></i>FACEBOOK</a>
+            <h4>Website links</h4>
+            <a href="https://github.com/RGUChainGang2022"><i className="fa fa-linkedin" aria-hidden="true"></i>Organization Github</a>
+            <a href="https://github.com/RGUChainGang2022/ReactFrontend"><i className="fa fa-youtube-play" aria-hidden="true"></i>Project repository</a>
+            <a href="https://carbon.cchain.me/last_blocks/11"><i className="fa fa-facebook" aria-hidden="true"></i>API endpoint</a>
         </div>
 
 
-</footer>
+    </footer>
     )
    
 }

@@ -61,7 +61,7 @@ const data = {
   labels,
   datasets: [
     {
-      label: `Data from block ${props.data[props.index].block.block_number}`,
+      label: `Data from block ${props.data[props.index].block.block_number} (CO2 per kWh)`,
       data: Object.values(ParsedData),
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     }

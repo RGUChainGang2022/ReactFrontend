@@ -4,7 +4,7 @@ import Stats from "./components/InfoDisplay"
 
 import ChartOne from "./components/ChartOne"
 import ChartTwo from "./components/ChartTwo"
-
+import ChartThree from './components/ChartThree';
 
 function AppBody(props){
     return (
@@ -36,11 +36,8 @@ function AppBody(props){
       </div>
 
       <div className="row">
-            <div className="column">
-              <h2>Test test</h2>
-            </div>
-            <div className="column">
-            <h2>Test test</h2>
+            <div className="column" id="bigGraph">
+            <ChartThree data={props.data} index1={props.data.length -1} index2={props.data.length - 11}/>
             </div>
       </div>
       </div>

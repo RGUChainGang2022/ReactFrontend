@@ -9,6 +9,7 @@ function Header(){
                  <a href="index.html">
                     <img src={logo} id="logo" alt="Company logo" width="250" height="150"/> 
                 </a>
+                <h1 id="title">Live carbon tracker</h1>
                 </div>
             </header>
         )

@@ -32,7 +32,7 @@ export function Chart(props) {
         labels: Object.keys(ParsedData),
         datasets: [
           {
-            label: '# of Votes',
+            label: '#Carbon intensity in the specified area',
             data: Object.values(ParsedData),
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
@@ -57,7 +57,7 @@ export function Chart(props) {
 
   return (
     <section>
-      <h1>Data from block: {props.data[props.index].block.block_number}</h1>
+      <h1>Block: {props.data[props.index].block.block_number}</h1>
       <br></br>
       <Pie data={chartData} />
     </section>

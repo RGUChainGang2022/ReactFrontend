@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 import axios from "axios"
 
-axios.get(`https://carbon.cchain.me/last_blocks/6`)
+axios.get(`https://carbon.cchain.me/last_blocks/11`)
         .then(res => {
           const data = res.data;
 
