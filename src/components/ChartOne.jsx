@@ -9,15 +9,31 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 export function Chart(props) {
 
-    var ParsedData = props.data[props.index].block.transactions[0].data.data.CarbonIntensityData
-    ParsedData = Object.values(ParsedData);
+  var rawData = props.data[props.index].block.transactions[0].data.data.CarbonIntensityData;
+
+  var ParsedData = {
+      "East Midlands": rawData["East Midlands"],
+      "East England": rawData["East England"],
+      "West Midlands": rawData["West Midlands"],
+      "North Scotland": rawData["North Scotland"],
+      "South Scotland": rawData["South Scotland"],
+      "South West England": rawData["South West England"],
+      "North Wales and Merseyside": rawData["North Wales and Merseyside"],
+      "North East England": rawData["North East England"],
+      "South East England": rawData["South East England"],
+      "South Wales": rawData["South Wales"],
+      "North West England": rawData["North West England"],
+      "Yorkshire": rawData["Yorkshire"],
+      "London": rawData["London"],
+      "South England": rawData["South England"]
+  }
 
     const chartData = {
-        labels: Object.keys(props.data[props.index].block.transactions[0].data.data.CarbonIntensityData),
+        labels: Object.keys(ParsedData),
         datasets: [
           {
             label: '# of Votes',
-            data: ParsedData,
+            data: Object.values(ParsedData),
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
