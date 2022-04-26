@@ -5,9 +5,10 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 import axios from "axios"
 
-var loc = window.location;
-let url = new URL(loc);
-var location = url.pathname.substring(1);
+var loc = window.location.search;
+
+var location = new URLSearchParams(loc);
+location = location.get("server")
 
 var serverChosen;
 var serverChosenFormatted;

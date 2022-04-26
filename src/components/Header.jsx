@@ -15,13 +15,13 @@ function Header(){
                     <select id="selector" onChange={function(){
                         switch(document.getElementById("selector").value){
                             case "0":
-                                document.location.href = "/carbon"
+                                document.location.href = "?server=carbon"
                                 break;
                             case "1":
-                                document.location.href = "/oxygenone"
+                                document.location.href = "?server=oxygenone"
                                 break;
                             case "2":
-                                document.location.href = "/oxygentwo"
+                                document.location.href = "?server=oxygentwo"
                                 break;
                         }
                     }}>
