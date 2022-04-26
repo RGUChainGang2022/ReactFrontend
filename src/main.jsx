@@ -5,16 +5,44 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 import axios from "axios"
 
-axios.get(`https://carbon.cchain.me/last_blocks/11`)
+var loc = window.location;
+let url = new URL(loc);
+var location = url.pathname.substring(1);
+
+var serverChosen;
+var serverChosenFormatted;
+
+switch(location){
+  case "oxygenone":
+    serverChosen = "https://oxygen-1.cchain.me/last_blocks/11";
+    serverChosenFormatted = "Oxygen 1"
+    break;
+
+  case "oxygentwo":
+    serverChosen = "https://oxygen-2.cchain.me/last_blocks/11";
+    serverChosenFormatted = "Oxygen 2"
+    break;
+
+  case "carbon":
+    serverChosen = "https://carbon.cchain.me/last_blocks/11";
+    serverChosenFormatted = "Carbon"
+    break;
+  default:
+    serverChosen = "https://carbon.cchain.me/last_blocks/11";
+    serverChosenFormatted = "Carbon"
+    break;
+
+}
+
+axios.get(serverChosen)
         .then(res => {
           const data = res.data;
 
-          ReactDOM.createRoot(document.getElementById('root')).render(
+          return ReactDOM.createRoot(document.getElementById('root')).render(
             <React.StrictMode>
               <Header/>
-              <Body data={data}/>
+              <Body data={data} server={serverChosenFormatted}/>
               <Footer/>
             </React.StrictMode>
           )
         })
-

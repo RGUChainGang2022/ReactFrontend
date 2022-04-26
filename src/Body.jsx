@@ -11,7 +11,7 @@ function AppBody(props){
       <div>
         <div className="row">
             <div className="column">
-              <Stats data={props.data}/>
+              <Stats data={props.data} server={props.server}/>
             </div>
             <div className="column">
               <ChartTwo data={props.data} index={props.data.length -1}/>

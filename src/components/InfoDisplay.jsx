@@ -10,6 +10,7 @@ export default class Stats extends React.Component {
           <br></br>
           <br></br>
           <h2>Current block {this.props.data[(this.props.data.length -1)].block.block_number}</h2>
+          <h3>Server: {this.props.server}</h3>
           <br/>
           {
               this.props.data

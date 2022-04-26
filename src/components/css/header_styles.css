@@ -118,3 +118,11 @@ a{
     color: white;
     margin-top:  55px;
 }
+
+
+select{
+    padding: 4px;
+    width: 110px;
+    text-align: center;
+    margin-left: 5px;
+}
