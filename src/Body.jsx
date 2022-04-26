@@ -1,6 +1,7 @@
 import React from 'react';
 import "./components/css/body_styles.css"
 import Stats from "./components/InfoDisplay"
+import StatsTwo from "./components/InfoDisplayTwo"
 
 import ChartOne from "./components/ChartOne"
 import ChartTwo from "./components/ChartTwo"
@@ -39,6 +40,11 @@ function AppBody(props){
             <div className="column" id="bigGraph">
             <ChartThree data={props.data} index1={props.data.length -1} index2={props.data.length - 11}/>
             </div>
+      </div>
+      <div className="row">
+        <div className="column"f>
+          <StatsTwo data={props.data} server={props.server}/>
+        </div>
       </div>
       </div>
     );
